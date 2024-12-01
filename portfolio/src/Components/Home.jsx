@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FaUser } from "react-icons/fa";
+
 import "../App.css"
 import ProjectInfo from './ProjectInfo';
 
@@ -15,8 +15,7 @@ const Home = (props) => {
             </div>
 
             <div id='profile'>
-                <FaUser className='pic' size={180}/>
-               
+                <img src="profile.svg" alt="" />
             </div>
 
         </div>
