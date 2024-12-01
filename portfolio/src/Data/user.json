@@ -1,0 +1,25 @@
+{
+    "name":"Yash Ram Malhotra",
+    "skills":[{"skill":"HTML", "logo":"html-icon.svg"},
+                {"skill":"CSS", "logo":"css-icon.svg"},
+                {"skill":"Javascript", "logo":"js-icon.svg"},
+                {"skill":"MongoDB", "logo":"mongodb-icon.svg"},
+                {"skill":"Expressjs", "logo":"express-js-icon.svg"},
+                {"skill":"React", "logo":"react-js-icon.svg"},
+                {"skill":"Nodejs", "logo":"node-js-icon.svg"}],
+    "about": "I am a passionate full stack developer. I am persuing bachelor of computer application at chandigarh university mohali.",
+    "project":[{"id":"ims", 
+                "title":"Inventory Management System",
+                 "img":["inventory.png","ims1.png"],
+                 "desc":" An inventory management system which build with the purpose to solve problem of manage stocks and invoice.It build on MERN (MongoDB, Expressjs, Reactjs, Nodejs) tech stack. This web app is feature loaded. It has fowing features: JWT authentication for data security, stock alerts, sales tracking etc."}],
+    
+    "education":{"degree_logo":"graduated.png",
+                "degree":"Bachelor of computer Application",
+                "university_logo":"cu.png",
+                "institute":"Chandigarh Univesity",
+                "year":2025},
+
+    "contact":{"email":{"href":"mailto:yashrmalhotra11@gmail.com","email_id":"yashrmalhotra11@gmail.com"},
+               "phone":{"href":"tel:+919810113981","num":"+919810113981"},
+               "linkedin":{"href":"https://www.linkedin.com/in/yash-ram-malhotra-890167247/","profile_name":"Yash Ram Malhotra"}                                                                                  } 
+}
