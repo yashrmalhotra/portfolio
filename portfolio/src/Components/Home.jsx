@@ -15,7 +15,7 @@ const Home = (props) => {
             </div>
 
             <div id='profile'>
-                <img src="profile.svg" alt="" />
+                <img src="profile.svg" alt="" id="profile"/>
             </div>
 
         </div>
