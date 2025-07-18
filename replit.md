@@ -51,21 +51,16 @@ The application follows a monorepo structure with clear separation between front
 
 ## Data Flow
 
-1. **Contact Form Submission**:
-   - User fills out contact form in ContactSection component
-   - Form data validated with Zod schema on frontend
-   - POST request to `/api/contact` endpoint
-   - Backend validates and stores in database
-   - Success/error feedback via toast notifications
-
-2. **Portfolio Display**:
+1. **Portfolio Display**:
    - Static content rendered from component data
    - Skills, experience, and projects displayed in dedicated sections
    - Smooth scrolling navigation between sections
+   - Contact information displayed with social media links
 
-3. **Admin Features**:
-   - GET `/api/contact-messages` endpoint for retrieving contact messages
-   - Memory storage fallback for development/testing
+2. **Navigation**:
+   - Client-side routing with Wouter
+   - Smooth scroll to sections within single page
+   - Responsive mobile navigation
 
 ## External Dependencies
 
@@ -119,9 +114,12 @@ The architecture supports both development flexibility and production scalabilit
 - Added projects section featuring GreatMart and Inventory Management System
 - **MAJOR RESTRUCTURE**: Converted from full-stack to frontend-only portfolio
   - Removed all backend dependencies (Express, PostgreSQL, Drizzle ORM)
-  - Removed TanStack Query and database functionality
+  - Removed TanStack Query and database functionality  
+  - Removed all toast/messaging functionality including contact forms
+  - Removed form handling dependencies (react-hook-form, zod validation)
   - Restructured project to run on Vite dev server only
   - Moved client files to root level for simpler structure
   - Created standalone React application that can run locally with `npm run dev`
 - Fixed "Illegal constructor" error by implementing inline navigation component
-- User confirmed preference for frontend-only portfolio that can run locally
+- Contact section now displays only contact information and social media links
+- User confirmed preference for frontend-only portfolio with no message functionality
