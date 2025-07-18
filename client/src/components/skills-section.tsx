@@ -13,6 +13,7 @@ import {
   SiMongodb, 
   SiRedis
 } from "react-icons/si";
+import { Zap } from "lucide-react";
 
 export default function SkillsSection() {
   const skillCategories = [
@@ -47,6 +48,7 @@ export default function SkillsSection() {
       skills: [
         { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
         { name: "Redis", icon: SiRedis, color: "#DC382D" },
+        { name: "Inngest", icon: Zap, color: "#3B82F6" },
       ]
     }
   ];
