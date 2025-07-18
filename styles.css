@@ -273,8 +273,22 @@ body {
 }
 
 .skill-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-icon svg {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover .skill-icon svg {
+    transform: scale(1.1);
 }
 
 .skill-card h3 {
