@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash Ram Malhotra - Full Stack Developer Portfolio</title>
     <meta name="description" content="Portfolio of Yash Ram Malhotra, Full Stack Developer specializing in React, Node.js, and modern web technologies. View projects, skills, and experience.">
     <meta name="keywords" content="Full Stack Developer, React, Node.js, JavaScript, TypeScript, MongoDB, Portfolio, Yash Ram Malhotra">
@@ -12,7 +12,6 @@
     <meta property="og:title" content="Yash Ram Malhotra - Full Stack Developer Portfolio">
     <meta property="og:description" content="Full Stack Developer specializing in modern web technologies and scalable applications. View my projects and experience.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
     
     <!-- Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -20,11 +19,279 @@
     <meta name="twitter:description" content="Full Stack Developer specializing in modern web technologies and scalable applications.">
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
-    <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
-  </body>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand" onclick="scrollToSection('home')">
+                Yash Ram Malhotra
+            </div>
+            <div class="nav-menu">
+                <button onclick="scrollToSection('home')" class="nav-link">Home</button>
+                <button onclick="scrollToSection('skills')" class="nav-link">Skills</button>
+                <button onclick="scrollToSection('experience')" class="nav-link">Experience</button>
+                <button onclick="scrollToSection('projects')" class="nav-link">Projects</button>
+                <button onclick="scrollToSection('contact')" class="nav-link">Contact</button>
+            </div>
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Yash Ram Malhotra</span>
+                </h1>
+                <h2 class="hero-subtitle">Full Stack Developer</h2>
+                <p class="hero-description">
+                    Passionate about creating efficient, scalable web applications using modern technologies. 
+                    Experienced in React, Node.js, MongoDB, and cloud deployment.
+                </p>
+                <div class="hero-buttons">
+                    <button onclick="scrollToSection('projects')" class="btn btn-primary">View My Work</button>
+                    <button onclick="scrollToSection('contact')" class="btn btn-secondary">Get In Touch</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <div class="dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="code-body">
+                            <code>
+                                <span class="keyword">const</span> <span class="variable">developer</span> = {<br>
+                                &nbsp;&nbsp;<span class="property">name</span>: <span class="string">"Yash Ram Malhotra"</span>,<br>
+                                &nbsp;&nbsp;<span class="property">skills</span>: [<span class="string">"React"</span>, <span class="string">"Node.js"</span>],<br>
+                                &nbsp;&nbsp;<span class="property">passion</span>: <span class="string">"Building amazing apps"</span><br>
+                                };
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-description">
+                Technologies I work with to bring ideas to life
+            </p>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>React</h3>
+                    <p>Building interactive UIs with modern React patterns</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">🟢</div>
+                    <h3>Node.js</h3>
+                    <p>Server-side development with Express and APIs</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">📜</div>
+                    <h3>JavaScript</h3>
+                    <p>ES6+ features and modern JavaScript development</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">🔷</div>
+                    <h3>TypeScript</h3>
+                    <p>Type-safe development for better code quality</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">🍃</div>
+                    <h3>MongoDB</h3>
+                    <p>NoSQL database design and optimization</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">🔴</div>
+                    <h3>Redis</h3>
+                    <p>Caching and session management</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">🐳</div>
+                    <h3>Docker</h3>
+                    <p>Containerization and deployment</p>
+                </div>
+                
+                <div class="skill-card">
+                    <div class="skill-icon">☁️</div>
+                    <h3>AWS</h3>
+                    <p>Cloud services and infrastructure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Developer Intern</h3>
+                        <h4>Avtechfin</h4>
+                        <p class="timeline-date">June 2024 - August 2024</p>
+                        <ul class="timeline-list">
+                            <li>Developed and maintained web applications using React and Node.js</li>
+                            <li>Implemented RESTful APIs and database integration</li>
+                            <li>Collaborated with senior developers on code reviews and best practices</li>
+                            <li>Contributed to improving application performance and user experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-description">
+                Some of the projects I've worked on recently
+            </p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>GreatMart E-commerce Platform</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        A full-featured e-commerce platform built with React and Node.js. 
+                        Features include user authentication, product catalog, shopping cart, 
+                        and payment integration.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Express</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Inventory Management System</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        A comprehensive inventory management system for small to medium businesses. 
+                        Includes real-time stock tracking, automated reorder alerts, and detailed reporting.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="education-card">
+                <div class="education-content">
+                    <h3>Bachelor of Engineering</h3>
+                    <h4>Chandigarh University</h4>
+                    <p class="education-date">2021 - 2025</p>
+                    <p class="education-description">
+                        Computer Science Engineering with focus on software development, 
+                        data structures, algorithms, and modern web technologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-description">
+                I'm always open to discussing new opportunities and interesting projects
+            </p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>yashram.malhotra@example.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 XXX XXX XXXX</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Punjab, India</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Yash Ram Malhotra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
