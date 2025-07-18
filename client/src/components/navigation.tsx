@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,10 +63,8 @@ export default function Navigation() {
           </div>
           
           {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
+          <button
+            className="md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? (
@@ -75,7 +72,7 @@ export default function Navigation() {
             ) : (
               <Menu className={`h-6 w-6 ${scrolled ? "text-slate-900" : "text-white"}`} />
             )}
-          </Button>
+          </button>
         </div>
         
         {/* Mobile Navigation */}
