@@ -79,14 +79,7 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
-        <button 
-          onClick={() => scrollToSection("skills")} 
-          className="text-white text-2xl bg-white/10 backdrop-blur-sm p-2 rounded-full hover:bg-white/20 transition-all"
-        >
-          <ChevronDown className="h-6 w-6" />
-        </button>
-      </div>
+
     </section>
   );
 }
