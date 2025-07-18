@@ -7,6 +7,7 @@ This is a full-stack portfolio website for Yash Ram Malhotra, a Full Stack Devel
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Skills display preference: Technology logos instead of skill level indicators.
 
 ## System Architecture
 
@@ -108,3 +109,14 @@ The application follows a monorepo structure with clear separation between front
 - Environment-specific configurations in place
 
 The architecture supports both development flexibility and production scalability, with clear separation of concerns and modern tooling throughout the stack.
+
+## Recent Changes
+
+### July 18, 2025
+- Built complete portfolio website based on Yash Ram Malhotra's resume
+- Implemented skills section with technology logos (JavaScript, TypeScript, React, Node.js, MongoDB, Redis, Docker, etc.)
+- Created experience section highlighting Avtechfin internship
+- Added projects section featuring GreatMart and Inventory Management System
+- Removed backend contact form functionality, kept frontend-only contact section
+- Fixed visibility issues with social media buttons and navigation elements
+- User confirmed all features working perfectly ("perfecto")
