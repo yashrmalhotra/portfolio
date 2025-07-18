@@ -47,21 +47,21 @@ export default function ContactSection() {
           {/* Call to Action */}
           <div className="text-center">
             <h3 className="text-2xl font-semibold text-white mb-8">Let's Connect</h3>
-            <div className="flex justify-center space-x-6 mb-8">
+            <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
               <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all hover:scale-105 hover:shadow-lg">
-                <a href="mailto:yashrmalhotra11@gmail.com" className="flex items-center">
+                <a href="mailto:yashrmalhotra11@gmail.com" className="flex items-center justify-center">
                   <Mail className="h-5 w-5 mr-2" />
                   Send Email
                 </a>
               </Button>
-              <Button asChild variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 rounded-lg font-semibold transition-all hover:scale-105">
-                <a href="#" className="flex items-center">
+              <Button asChild className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold transition-all hover:scale-105 hover:shadow-lg">
+                <a href="#" className="flex items-center justify-center">
                   <SiLinkedin className="h-5 w-5 mr-2" />
                   LinkedIn
                 </a>
               </Button>
-              <Button asChild variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 rounded-lg font-semibold transition-all hover:scale-105">
-                <a href="#" className="flex items-center">
+              <Button asChild className="bg-gray-700 hover:bg-gray-600 text-white px-8 py-4 rounded-lg font-semibold transition-all hover:scale-105 hover:shadow-lg">
+                <a href="#" className="flex items-center justify-center">
                   <SiGithub className="h-5 w-5 mr-2" />
                   GitHub
                 </a>

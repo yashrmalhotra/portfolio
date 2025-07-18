@@ -58,23 +58,23 @@ export default function HeroSection() {
           <div className="flex justify-center items-center space-x-6 flex-wrap gap-4">
             <a 
               href="mailto:yashrmalhotra11@gmail.com" 
-              className="text-slate-300 hover:text-white text-2xl transition-colors hover:scale-110 transform"
+              className="bg-white/10 backdrop-blur-sm p-3 rounded-full text-white hover:bg-white/20 transition-all hover:scale-110 transform"
             >
               <Mail className="h-6 w-6" />
             </a>
             <a 
               href="#" 
-              className="text-slate-300 hover:text-white text-2xl transition-colors hover:scale-110 transform"
+              className="bg-white/10 backdrop-blur-sm p-3 rounded-full text-white hover:bg-white/20 transition-all hover:scale-110 transform"
             >
               <SiLinkedin className="h-6 w-6" />
             </a>
             <a 
               href="#" 
-              className="text-slate-300 hover:text-white text-2xl transition-colors hover:scale-110 transform"
+              className="bg-white/10 backdrop-blur-sm p-3 rounded-full text-white hover:bg-white/20 transition-all hover:scale-110 transform"
             >
               <SiGithub className="h-6 w-6" />
             </a>
-            <div className="text-slate-300 text-sm flex items-center gap-1">
+            <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm flex items-center gap-2">
               <MapPin className="h-4 w-4" />
               Delhi, India
             </div>
