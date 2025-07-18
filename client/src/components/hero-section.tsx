@@ -37,9 +37,8 @@ export default function HeroSection() {
               View My Work
             </Button>
             <Button 
-              variant="outline"
               onClick={() => scrollToSection("contact")}
-              className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 rounded-lg font-semibold transition-all hover:scale-105"
+              className="bg-white/10 backdrop-blur-sm border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 rounded-lg font-semibold transition-all hover:scale-105"
             >
               Get In Touch
             </Button>
