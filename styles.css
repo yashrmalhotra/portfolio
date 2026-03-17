@@ -412,9 +412,9 @@ body {
   background: white;
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+.projects-box {
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
